@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banking Application</h1>
+
+        <!-- Create Account Section -->
+        <section class="account-section">
+            <h2>Create Account</h2>
+            <form id="createAccountForm">
+                <label for="accountHolderName">Account Holder Name:</label>
+                <input type="text" id="accountHolderName" name="accountHolderName" required>
+
+                <label for="initialBalance">Initial Balance:</label>
+                <input type="number" id="initialBalance" name="balance" required>
+
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+
+        <!-- Deposit Section -->
+        <section class="account-section">
+            <h2>Deposit</h2>
+            <form id="depositForm">
+                <label for="depositAccountId">Account ID:</label>
+                <input type="number" id="depositAccountId" name="accountId" required>
+
+                <label for="depositAmount">Amount to Deposit:</label>
+                <input type="number" id="depositAmount" name="amount" required>
+
+                <button type="submit">Deposit</button>
+            </form>
+        </section>
+
+        <!-- Withdraw Section -->
+        <section class="account-section">
+            <h2>Withdraw</h2>
+            <form id="withdrawForm">
+                <label for="withdrawAccountId">Account ID:</label>
+                <input type="number" id="withdrawAccountId" name="accountId" required>
+
+                <label for="withdrawAmount">Amount to Withdraw:</label>
+                <input type="number" id="withdrawAmount" name="amount" required>
+
+                <button type="submit">Withdraw</button>
+            </form>
+        </section>
+
+        <!-- Delete Account Section -->
+        <section class="account-section">
+            <h2>Delete Account</h2>
+            <form id="deleteAccountForm">
+                <label for="deleteAccountId">Account ID:</label>
+                <input type="number" id="deleteAccountId" name="accountId" required>
+
+                <button type="submit">Delete Account</button>
+            </form>
+        </section>
+
+        <!-- List Accounts Section -->
+        <section class="account-section">
+            <h2>Account List</h2>
+            <button id="loadAccounts">Load All Accounts</button>
+            <ul id="accountList"></ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
